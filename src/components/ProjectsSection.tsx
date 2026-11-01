@@ -264,6 +264,8 @@ export default function ProjectsSection() {
                     src="/images/vuzhavu/vuzhavu_logo_isolated.jpg"
                     alt="Vuzhavu Original Logo"
                     fill
+                    sizes="144px"
+                    loading="lazy"
                     className="object-contain p-2 group-hover:scale-105 transition-transform"
                   />
                   <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
@@ -326,6 +328,8 @@ export default function ProjectsSection() {
                   src={vuzhavuMedia[vuzhavuIdx].src}
                   alt={vuzhavuMedia[vuzhavuIdx].caption}
                   fill
+                  sizes="(max-width: 1024px) 100vw, 1000px"
+                  loading="lazy"
                   className="object-contain p-3 group-hover:scale-[1.01] transition-transform duration-300"
                 />
                 <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
@@ -347,7 +351,7 @@ export default function ProjectsSection() {
                         : "border-white/10 opacity-60 hover:opacity-100"
                     }`}
                   >
-                    <Image src={m.src} alt={m.caption} fill className="object-cover" />
+                    <Image src={m.src} alt={m.caption} fill sizes="80px" loading="lazy" className="object-cover" />
                   </button>
                 ))}
               </div>
@@ -530,6 +534,8 @@ export default function ProjectsSection() {
                   src={adTrucksMedia[adTrucksIdx].src}
                   alt={adTrucksMedia[adTrucksIdx].caption}
                   fill
+                  sizes="(max-width: 1024px) 100vw, 1000px"
+                  loading="lazy"
                   className="object-contain p-2 group-hover:scale-[1.01] transition-transform duration-300"
                 />
                 <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
@@ -551,7 +557,7 @@ export default function ProjectsSection() {
                         : "border-white/10 opacity-60 hover:opacity-100"
                     }`}
                   >
-                    <Image src={m.src} alt={m.caption} fill className="object-cover" />
+                    <Image src={m.src} alt={m.caption} fill sizes="120px" loading="lazy" className="object-cover" />
                   </button>
                 ))}
               </div>
@@ -649,6 +655,8 @@ export default function ProjectsSection() {
                   src={skincareMedia[skincareIdx].src}
                   alt={skincareMedia[skincareIdx].caption}
                   fill
+                  sizes="(max-width: 1024px) 100vw, 1000px"
+                  loading="lazy"
                   className="object-contain p-2 group-hover:scale-[1.01] transition-transform duration-300"
                 />
                 <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
@@ -670,7 +678,7 @@ export default function ProjectsSection() {
                         : "border-white/10 opacity-60 hover:opacity-100"
                     }`}
                   >
-                    <Image src={m.src} alt={m.caption} fill className="object-cover" />
+                    <Image src={m.src} alt={m.caption} fill sizes="120px" loading="lazy" className="object-cover" />
                   </button>
                 ))}
               </div>
@@ -690,6 +698,7 @@ export default function ProjectsSection() {
               src={previewImage}
               alt="Fullscreen Preview"
               fill
+              sizes="100vw"
               className="object-contain"
             />
           </div>

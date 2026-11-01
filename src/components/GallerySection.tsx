@@ -72,7 +72,7 @@ const GALLERY_ITEMS: GalleryItem[] = [
     title: "Cinematic Typographic Poster 01",
     category: "poster",
     categoryLabel: "POSTER DESIGN",
-    image: "/images/posters/ChatGPT Image May 21, 2026, 12_34_34 PM.png",
+    image: "/images/posters/Screenshot 2026-05-14 191152.png",
     aspect: "aspect-[3/4]",
     description: "Expressive editorial poster blending surreal composition, layered typography, and atmospheric lighting.",
     tools: ["Photoshop", "Illustrator"],
@@ -82,7 +82,7 @@ const GALLERY_ITEMS: GalleryItem[] = [
     title: "Creative Visual Narrative Poster 02",
     category: "poster",
     categoryLabel: "POSTER DESIGN",
-    image: "/images/posters/ChatGPT Image May 21, 2026, 12_56_45 PM.png",
+    image: "/images/posters/Screenshot 2026-05-14 191227.png",
     aspect: "aspect-[3/4]",
     description: "High-contrast promotional visual exploring human connection, motion, and hot-pink typography accents.",
     tools: ["Photoshop", "Illustrator"],
@@ -357,6 +357,7 @@ export default function GallerySection() {
                     alt={item.title}
                     fill
                     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                    loading="lazy"
                     className="object-contain p-2 group-hover:scale-102 transition-transform duration-500"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-[#07060A]/90 via-transparent to-transparent opacity-60" />
@@ -467,6 +468,7 @@ export default function GallerySection() {
                     src={selectedItem.image}
                     alt={selectedItem.title}
                     fill
+                    sizes="(max-width: 1024px) 100vw, 900px"
                     className="object-contain p-2"
                   />
                 </div>

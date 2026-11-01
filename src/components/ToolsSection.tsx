@@ -202,9 +202,11 @@ export default function ToolsSection() {
           <div className="relative z-20 w-44 h-44 rounded-full p-1 bg-gradient-to-tr from-[#FF1F8E] via-[#48145F] to-[#07060A] shadow-[0_0_40px_rgba(255,31,142,0.35)] group cursor-pointer">
             <div className="w-full h-full rounded-full overflow-hidden relative bg-[#07060A]">
               <Image
-                src="/images/profile/vaishnavi.jpg"
+                src="/images/profile/vaishnavi.jpeg"
                 alt="Vaishnavi Sakthi"
                 fill
+                sizes="176px"
+                loading="lazy"
                 className="object-cover group-hover:scale-105 transition-transform duration-500"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-[#07060A]/70 via-transparent to-transparent" />
@@ -263,9 +265,11 @@ export default function ToolsSection() {
           <div className="relative w-36 h-36 rounded-full p-1 bg-gradient-to-tr from-[#FF1F8E] via-[#48145F] to-[#07060A] shadow-xl">
             <div className="w-full h-full rounded-full overflow-hidden relative">
               <Image
-                src="/images/profile/vaishnavi.jpg"
+                src="/images/profile/vaishnavi.jpeg"
                 alt="Vaishnavi Sakthi"
                 fill
+                sizes="144px"
+                loading="lazy"
                 className="object-cover"
               />
             </div>

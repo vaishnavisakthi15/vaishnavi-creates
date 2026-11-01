@@ -31,12 +31,12 @@ export default function AboutSection() {
               <div className="relative rounded-2xl overflow-hidden border border-white/10 bg-[#0E0C14] shadow-2xl">
                 <div className="aspect-[4/5] relative w-full overflow-hidden">
                   <Image
-                    src="/images/profile/vaishnavi.jpg"
+                    src="/images/profile/vaishnavi.jpeg"
                     alt="Vaishnavi Sakthi — Creative Designer"
                     fill
                     sizes="(max-width: 768px) 100vw, 400px"
                     className="object-cover object-center filter contrast-105 group-hover:scale-102 transition-transform duration-500"
-                    priority
+                    loading="lazy"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-[#07060A]/80 via-transparent to-transparent" />
                 </div>
@@ -71,7 +71,9 @@ export default function AboutSection() {
                     src="/images/collages/graphic-design-collage.png"
                     alt="Graphic Design"
                     fill
+                    sizes="(max-width: 768px) 30vw, 150px"
                     className="object-cover"
+                    loading="lazy"
                   />
                 </div>
                 <span className="block text-[9px] font-mono-code text-center py-1 text-[#9B98A8] bg-[#07060A]/90">
@@ -85,7 +87,9 @@ export default function AboutSection() {
                     src="/images/collages/website-design-collage.png"
                     alt="Website Design"
                     fill
+                    sizes="(max-width: 768px) 30vw, 150px"
                     className="object-cover"
+                    loading="lazy"
                   />
                 </div>
                 <span className="block text-[9px] font-mono-code text-center py-1 text-[#9B98A8] bg-[#07060A]/90">
@@ -99,7 +103,9 @@ export default function AboutSection() {
                     src="/images/collages/video-editing-collage.png"
                     alt="Video Editing"
                     fill
+                    sizes="(max-width: 768px) 30vw, 150px"
                     className="object-cover"
+                    loading="lazy"
                   />
                 </div>
                 <span className="block text-[9px] font-mono-code text-center py-1 text-[#9B98A8] bg-[#07060A]/90">
